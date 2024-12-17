@@ -16,8 +16,8 @@ addSound("hit3", "../assets/sound/hit/hit3.ogg");
 addSound("hit4", "../assets/sound/hit/hit4.ogg");
 addPool("hit", ["hit1", "hit2", "hit3", "hit4"]);
 
-addSound("anvil_use", "../assets/sound/anvil_use.ogg");
-addSound("anvil_break", "../assets/sound/anvil_break.ogg");
+addSound("anvil_use", "../assets/sound/anvil/anvil_use.ogg");
+addSound("anvil_break", "../assets/sound/anvil/anvil_break.ogg");
 
 addSound("crackle1", "../assets/sound/campfire/crackle1.ogg");
 addSound("crackle2", "../assets/sound/campfire/crackle2.ogg");
