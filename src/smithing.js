@@ -144,7 +144,7 @@ const finishAttempt = (ratio, success = true) => {
 			playsound("beacon_power");
 		}
 
-	}, 900);
+	}, 750);
 };
 
 const selectRecipe = name => {
