@@ -34,6 +34,11 @@ addSound("blastfurnace4", "../assets/sound/blast_furnace/blastfurnace4.ogg");
 addSound("blastfurnace5", "../assets/sound/blast_furnace/blastfurnace5.ogg");
 addPool("blastfurnace", ["blastfurnace1", "blastfurnace2", "blastfurnace3", "blastfurnace4", "blastfurnace5"]);
 
+addSound("beacon_power1", "../assets/sound/beacon/power1.ogg");
+addSound("beacon_power2", "../assets/sound/beacon/power2.ogg");
+addSound("beacon_power3", "../assets/sound/beacon/power3.ogg");
+addPool("beacon_power", ["beacon_power1", "beacon_power2", "beacon_power3"]);
+
 
 const playsound = name => {
     const sound = sounds[name];

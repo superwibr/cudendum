@@ -141,6 +141,7 @@ const finishAttempt = (ratio, success = true) => {
 			state.processing = false;
 		} else {
 			uiState.medal = ForgingBonus.getByRatio(state.attempts.sort((a, b) => a.ratio - b.ratio)[0].ratio).iconOffset;
+			playsound("beacon_power");
 		}
 
 	}, 900);
