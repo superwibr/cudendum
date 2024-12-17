@@ -9,16 +9,18 @@ const state = {
 	medal: -1
 };
 
-const anvil = await Sheet("../assets/textures/anvil.png");
-const actionIcons = await Sheet("../assets/textures/actionIcons.png");
-const bonusIcons = await Sheet("../assets/textures/bonuses.png");
+const a = p => new URL(p, new URL("../assets/textures/", import.meta.url));
+
+const anvil = await Sheet(a("./anvil.png"));
+const actionIcons = await Sheet(a("./actionIcons.png"));
+const bonusIcons = await Sheet(a("./bonuses.png"));
 const recipe_icons = {
-	brass_sheet: await Texture("../assets/textures/recipe_icons/brass_sheet.png"),
-	bronze_axe_head: await Texture("../assets/textures/recipe_icons/bronze_axe_head.png"),
-	high_carbon_steel: await Texture("../assets/textures/recipe_icons/high_carbon_steel.png"),
-	wrought_iron_tuyere: await Texture("../assets/textures/recipe_icons/wrought_iron_tuyere.png"),
+	brass_sheet: await Texture(a("./recipe_icons/brass_sheet.png")),
+	bronze_axe_head: await Texture(a("./recipe_icons/bronze_axe_head.png")),
+	high_carbon_steel: await Texture(a("./recipe_icons/high_carbon_steel.png")),
+	wrought_iron_tuyere: await Texture(a("./recipe_icons/wrought_iron_tuyere.png")),
 };
-const medals = await Sheet("../assets/textures/medals.png");
+const medals = await Sheet(a("./medals.png"));
 
 const background = {
 	type: "static",
