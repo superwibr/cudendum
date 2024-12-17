@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 100vh;
+
+    background-color: grey;
+}
+
+.smithui {
+    aspect-ratio: 176/112;
+    width: calc(80vh * (176 / 112));
+    height: calc(80vw * (112 / 176));
+    max-width: 80vw;
+    max-height: 80vh;
+
+    display: block;
+    position: relative;
+}
